@@ -1,0 +1,25 @@
+
+h1{
+    color: red;
+}
+
+header{
+    background-color: #ccc;
+}
+
+#section-marketing-course{
+    background-color: #00ff00;
+}
+
+#section-programming-course{
+    background-color: #0000ff;
+}
+
+#section-programming-course h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+}
+
+#section-programming-course p{
+    background: #822cb0;
+}

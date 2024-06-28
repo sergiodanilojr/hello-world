@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.section{
+    background: rgba(0,0,0,0.05);
+    width: 100%;
+    padding: 50px;
+    margin: 40px;
+
+}
+
+.bagual{
+    background-color: yellow;
+}
+
+.section header{
+    background-color: red;
+}
+
+.bagual header{
+    margin-bottom: 30px;
+    background-color: purple;
+}
