@@ -4,27 +4,158 @@
     box-sizing: border-box;
 }
 
+/* 
+* COC - Covention over configuration 
+* DRY - Don't repeat yourself
+*/
+
 body{
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.display-none{
+    display: none;
 }
 
 .section{
-    background: rgba(0,0,0,0.05);
     width: 100%;
-    padding: 50px;
-    margin: 40px;
+    padding: 60px 0;
+}
+
+.section-header{
+   text-align: center;
+   margin-bottom: 60px;
+   line-height: 1.25em;
+}
+
+.section-header-title{
+    margin-bottom: 25px;
+    font-weight: 300;
+    font-size: 1.8em;
+}
+
+.section-header-subtitle{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.py-10px{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+w-full{
+    width: 100%;
+}
+
+.bg-light{
+    background-color: #d8d8d8;
+}
+
+.logo{
+    flex-basis: 10%;
 
 }
 
-.bagual{
-    background-color: yellow;
+.logo img{
+    width:100%;
 }
 
-.section header{
-    background-color: red;
+.courses{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
 }
 
-.bagual header{
-    margin-bottom: 30px;
-    background-color: purple;
+.courses .course {
+    flex-basis: calc(100% / 3 - 16px);
+    background-color: white;
+    /* padding: 32px 40px; */
+    padding: 0;
+    /* border: 1px solid rgba(0,0,0, 0.1); */
+    border-radius: 10px;
+}
+
+.courses .course .cover{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.courses .course .cover img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+.courses .course ul,
+.courses .course header{
+    padding: 32px 40px;
+}
+
+.courses .course ul{
+    list-style: none;
+}
+
+/* MAIN NAV */
+
+
+.main-nav ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main-nav ul li{
+    margin-left: 16px;
+    text-transform: uppercase;
+    font-size: .875em;
+    font-weight: bold;  
+}
+
+.main-nav ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: all;
+    transition-duration: .3s;
+}
+
+.main-nav ul li a:hover{
+    color: #ff4021;
 }

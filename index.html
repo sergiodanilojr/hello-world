@@ -5,52 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Primeira Página na Harve</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    
-        <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <!-- OOCSS -->
 
 <body>
-    <h1>Cursos da Harve</h1>
-    <main>
-        <section class="section" >
-            <header>
-                <h1>Cursos de Programação</h1>
-                <p>Os melhores cursos de tecnologia você encontra na Harve. Cursos presenciais para todas as idades,
-                    etc...</p>
-                <p>Os melhores cursos de tecnologia você encontra na Harve. Cursos presenciais para todas as idades,
-                    etc...</p>
-            </header>
-
-            <article>
-                <header>
-                    <h1>PHP</h1>
+    <div>
+        <div class="container">
+            <div class="d-flex justify-between w-full py-10px main-nav-wrapper">
+                <div class="logo">
+                    <img src="./images/logo.svg"  alt="Logo da Harve" />
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li>
+                            <a href="/">Início</a>
+                        </li>
+                        <li>
+                            <a href="/cursos.html">Cursos</a>
+                        </li>
+                        <li>
+                            <a href="/contato.html">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <h1 class="display-none">Cursos da Harve</h1>
+    <main class="wrapper">
+        <section class="section bg-light">
+            <div class="container">
+                <header class="section-header">
+                    <h1 class="section-header-title">Cursos de Programação</h1>
+               
+                    <p class="section-header-subtitle">Os melhores cursos de tecnologia você encontra na Harve. Cursos presenciais para todas as idades,
+                        etc...</p>
+                    <p class="section-header-subtitle">Os melhores cursos de tecnologia você encontra na Harve. Cursos presenciais para todas as idades,
+                        etc...</p>
                 </header>
+                <div class="courses">
+                    <article class="course">
+                        <div class="cover">
+                            <img src="./images/code.jpg" alt="Imagem de um código" />
+                        </div>
+                        <header>
+                            <h1>PHP</h1>
+                        </header>
 
-                <ul>
-                    <li>PDO - PHP Data Object</li>
-                    <li>SPL - Standard PHP Library</li>
-                    <li >PHP OO - Orientação a Objetos</li>
-                </ul>
-            </article>
+                        <ul>
+                            <li>PDO - PHP Data Object</li>
+                            <li>SPL - Standard PHP Library</li>
+                            <li>PHP OO - Orientação a Objetos</li>
+                        </ul>
+                    </article>
 
-            <article>
-                <header>
-                    <h1>JavaScript</h1>
-                </header>
-            </article>
+                    <article class="course">
+                        <div class="cover">
+                            <img src="./images/pc.jpg" alt="Imagem de um código" />
+                        </div>
+                        <header>
+                            <h1>JavaScript</h1>
+                        </header>
+                    </article>
 
-            <article>
-                <header>
-                    <h1>GoLang</h1>
-                </header>
-            </article>
-
+                    <article class="course">
+                        <div class="cover">
+                            <img src="https://images.pexels.com/photos/3987066/pexels-photo-3987066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem de um código" />
+                        </div>
+                        <!--  -->
+                        <header>
+                            <h1>GoLang</h1>
+                        </header>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section class="section bagual">
@@ -60,16 +95,17 @@
             <h2>Dados aplicados a Marketing</h2>
             <h2>Marketing Digital</h2>
         </section>
+        <aside>
+            <h2>Cursos Relacionados</h2>
+            <article>
+                <header>
+                    <h3>Cursos de Docker</h3>
+                </header>
+            </article>
+        </aside>
     </main>
-    <aside>
-        <h2>Cursos Relacionados</h2>
-        <article>
-            <header>
-                <h3>Cursos de Docker</h3>
-            </header>
-        </article>
-    </aside>
-    <!-- Next class: flexbox -->
+
+    <!-- Next class: media queries -->
 </body>
 
 </html>
